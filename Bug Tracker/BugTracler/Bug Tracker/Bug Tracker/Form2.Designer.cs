@@ -41,11 +41,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.ComboUser = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_Fname
@@ -143,8 +138,7 @@
             this.ComboUser.FormattingEnabled = true;
             this.ComboUser.Items.AddRange(new object[] {
             "Admin",
-            "Tester",
-            "Developer"});
+            "User"});
             this.ComboUser.Location = new System.Drawing.Point(110, 292);
             this.ComboUser.Name = "ComboUser";
             this.ComboUser.Size = new System.Drawing.Size(324, 21);
@@ -159,71 +153,11 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "User Type";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(440, 44);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(11, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "*";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(440, 105);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(11, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "*";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(440, 159);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(11, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "*";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(440, 202);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(11, 13);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "*";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(440, 300);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(11, 13);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "*";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 425);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.ClientSize = new System.Drawing.Size(455, 425);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ComboUser);
             this.Controls.Add(this.label5);
@@ -259,10 +193,5 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox ComboUser;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
     }
 }

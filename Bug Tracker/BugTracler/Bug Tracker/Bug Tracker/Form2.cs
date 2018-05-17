@@ -51,7 +51,5 @@ namespace Bug_Tracker
                 txt_Fname.Text = txt_Eid.Text = txt_pwd.Text = txt_Uname.Text = ComboUser.Text = txt_cpwd.Text = "";
             }
         }
-
-
     }
 }

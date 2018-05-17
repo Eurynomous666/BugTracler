@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SignUp = new System.Windows.Forms.Button();
-            this.txtUname = new System.Windows.Forms.TextBox();
-            this.txtPwd = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnLogin
+            // button1
             // 
-            this.btnLogin.Location = new System.Drawing.Point(178, 245);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Location = new System.Drawing.Point(178, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SignUp
             // 
@@ -56,21 +56,20 @@
             this.SignUp.Text = "Signup";
             this.SignUp.UseVisualStyleBackColor = true;
             this.SignUp.Click += new System.EventHandler(this.SignUp_Click);
-            
             // 
-            // txtUname
+            // textBox1
             // 
-            this.txtUname.Location = new System.Drawing.Point(119, 80);
-            this.txtUname.Name = "txtUname";
-            this.txtUname.Size = new System.Drawing.Size(263, 20);
-            this.txtUname.TabIndex = 2;
+            this.textBox1.Location = new System.Drawing.Point(119, 80);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(263, 20);
+            this.textBox1.TabIndex = 2;
             // 
-            // txtPwd
+            // textBox2
             // 
-            this.txtPwd.Location = new System.Drawing.Point(119, 148);
-            this.txtPwd.Name = "txtPwd";
-            this.txtPwd.Size = new System.Drawing.Size(263, 20);
-            this.txtPwd.TabIndex = 3;
+            this.textBox2.Location = new System.Drawing.Point(119, 148);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(263, 20);
+            this.textBox2.TabIndex = 3;
             // 
             // label1
             // 
@@ -98,6 +97,7 @@
             this.label3.Size = new System.Drawing.Size(186, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Don\'t have an account ? SignUp now";
+      
             // 
             // Form1
             // 
@@ -107,13 +107,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtPwd);
-            this.Controls.Add(this.txtUname);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.SignUp);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,10 +120,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button SignUp;
-        private System.Windows.Forms.TextBox txtUname;
-        private System.Windows.Forms.TextBox txtPwd;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
