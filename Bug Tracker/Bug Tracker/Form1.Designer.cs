@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             this.btnLogin = new System.Windows.Forms.Button();
-            this.SignUp = new System.Windows.Forms.Button();
             this.txtUname = new System.Windows.Forms.TextBox();
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -46,17 +44,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // SignUp
-            // 
-            this.SignUp.Location = new System.Drawing.Point(178, 339);
-            this.SignUp.Name = "SignUp";
-            this.SignUp.Size = new System.Drawing.Size(75, 27);
-            this.SignUp.TabIndex = 1;
-            this.SignUp.Text = "Signup";
-            this.SignUp.UseVisualStyleBackColor = true;
-            this.SignUp.Click += new System.EventHandler(this.SignUp_Click);
-            
             // 
             // txtUname
             // 
@@ -90,26 +77,15 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 299);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Don\'t have an account ? SignUp now";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 397);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtUname);
-            this.Controls.Add(this.SignUp);
             this.Controls.Add(this.btnLogin);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -122,12 +98,10 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button SignUp;
         private System.Windows.Forms.TextBox txtUname;
         private System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }
 

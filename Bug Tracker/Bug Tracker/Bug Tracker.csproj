@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.2.0.5777, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +54,12 @@
     </Compile>
     <Compile Include="AdminFrm.Designer.cs">
       <DependentUpon>AdminFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFrm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFrm2.Designer.cs">
+      <DependentUpon>AdminFrm2.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="DeveloperFrm.cs">
@@ -78,6 +88,12 @@
     <Compile Include="UserFrm.Designer.cs">
       <DependentUpon>UserFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminFrm.resx">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFrm2.resx">
+      <DependentUpon>AdminFrm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

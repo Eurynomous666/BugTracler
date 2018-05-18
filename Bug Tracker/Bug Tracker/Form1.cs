@@ -100,12 +100,6 @@ namespace Bug_Tracker
 
         }
 
-        private void SignUp_Click(object sender, EventArgs e)
-        {
-            
-            new Form2().Show();
-            this.Hide();
-        }
     }
         }
 
