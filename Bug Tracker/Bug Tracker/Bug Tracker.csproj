@@ -61,6 +61,12 @@
     <Compile Include="AdminFrm2.Designer.cs">
       <DependentUpon>AdminFrm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="DeveloperFrm.cs">
       <SubType>Form</SubType>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updatestatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updatestatus.Designer.cs">
+      <DependentUpon>Updatestatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminFrm2.resx">
       <DependentUpon>AdminFrm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeveloperFrm.resx">
+      <DependentUpon>DeveloperFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -109,6 +127,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Updatestatus.resx">
+      <DependentUpon>Updatestatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserFrm.resx">
       <DependentUpon>UserFrm.cs</DependentUpon>
     </EmbeddedResource>

@@ -69,7 +69,7 @@ namespace Bug_Tracker
                                 Username = txtUname.Text.Trim();
                                 //Admin_Panel panel = new Admin_Panel();
                                 //panel.Show();
-                                AdminFrm panel = new AdminFrm();
+                                btnAssign panel = new btnAssign();
                                 panel.Show();
                                 this.Hide();
                             }

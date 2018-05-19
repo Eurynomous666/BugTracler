@@ -10,6 +10,9 @@ Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CoreCompileIn
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.exe
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.pdb
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.TesterFrm.resources
-Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.AdminFrm.resources
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.AdminFrm2.resources
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CopyComplete
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.DeveloperFrm.resources
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.check.resources
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Updatestatus.resources
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.btnAssign.resources

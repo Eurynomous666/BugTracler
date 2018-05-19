@@ -1,6 +1,6 @@
 ﻿namespace Bug_Tracker
 {
-    partial class AdminFrm
+    partial class btnAssign
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createNewAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.date = new System.Windows.Forms.Label();
             this.Completed = new System.Windows.Forms.DataGridView();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.time = new System.Windows.Forms.Label();
-            this.createNewAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAssignProj = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Completed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pending)).BeginInit();
@@ -91,6 +92,13 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // createNewAccountToolStripMenuItem
+            // 
+            this.createNewAccountToolStripMenuItem.Name = "createNewAccountToolStripMenuItem";
+            this.createNewAccountToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
+            this.createNewAccountToolStripMenuItem.Text = "Create New Account";
+            this.createNewAccountToolStripMenuItem.Click += new System.EventHandler(this.createNewAccountToolStripMenuItem_Click);
             // 
             // date
             // 
@@ -178,18 +186,22 @@
             this.time.TabIndex = 9;
             this.time.Text = "Time";
             // 
-            // createNewAccountToolStripMenuItem
+            // btnAssignProj
             // 
-            this.createNewAccountToolStripMenuItem.Name = "createNewAccountToolStripMenuItem";
-            this.createNewAccountToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
-            this.createNewAccountToolStripMenuItem.Text = "Create New Account";
-            this.createNewAccountToolStripMenuItem.Click += new System.EventHandler(this.createNewAccountToolStripMenuItem_Click);
+            this.btnAssignProj.Location = new System.Drawing.Point(12, 36);
+            this.btnAssignProj.Name = "btnAssignProj";
+            this.btnAssignProj.Size = new System.Drawing.Size(126, 23);
+            this.btnAssignProj.TabIndex = 10;
+            this.btnAssignProj.Text = "Assign Projects";
+            this.btnAssignProj.UseVisualStyleBackColor = true;
+            this.btnAssignProj.Click += new System.EventHandler(this.btnAssignProj_Click);
             // 
-            // AdminFrm
+            // btnAssign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 596);
+            this.Controls.Add(this.btnAssignProj);
             this.Controls.Add(this.time);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -201,7 +213,7 @@
             this.Controls.Add(this.date);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "AdminFrm";
+            this.Name = "btnAssign";
             this.Text = "AdminFrm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -230,5 +242,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label time;
         private System.Windows.Forms.ToolStripMenuItem createNewAccountToolStripMenuItem;
+        private System.Windows.Forms.Button btnAssignProj;
     }
 }

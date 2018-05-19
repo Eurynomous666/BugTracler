@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Bug_Tracker
 {
-    public partial class AdminFrm : Form
+    public partial class btnAssign : Form
     {
-        public AdminFrm()
+        public btnAssign()
         {
             InitializeComponent();
         }
@@ -60,7 +60,13 @@ namespace Bug_Tracker
         private void createNewAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new Form2().Show();
-            
+
+        }
+
+        private void btnAssignProj_Click(object sender, EventArgs e)
+        {
+            new AdminFrm2().Show();
+            this.Hide();
         }
     }
 }
