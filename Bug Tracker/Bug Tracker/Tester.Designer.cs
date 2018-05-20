@@ -39,13 +39,14 @@
             this.btn_logout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_search2 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.testdgv = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.btn_developer = new System.Windows.Forms.Button();
             this.btn_testok = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbluname = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.devdgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testdgv)).BeginInit();
             this.SuspendLayout();
             // 
             // date2
@@ -91,6 +92,7 @@
             this.devdgv.Size = new System.Drawing.Size(673, 155);
             this.devdgv.TabIndex = 17;
             this.devdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.devdgv_CellContentClick);
+            this.devdgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.devdgv_CellDoubleClick);
             // 
             // btn_refresh2
             // 
@@ -100,6 +102,7 @@
             this.btn_refresh2.TabIndex = 18;
             this.btn_refresh2.Text = "Refresh";
             this.btn_refresh2.UseVisualStyleBackColor = true;
+            this.btn_refresh2.Click += new System.EventHandler(this.btn_refresh2_Click);
             // 
             // btn_todeveloper
             // 
@@ -119,6 +122,7 @@
             this.btn_logout.TabIndex = 20;
             this.btn_logout.Text = "Logout";
             this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // label1
             // 
@@ -136,13 +140,13 @@
             this.txt_search2.Size = new System.Drawing.Size(156, 20);
             this.txt_search2.TabIndex = 22;
             // 
-            // dataGridView1
+            // testdgv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 288);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(673, 155);
-            this.dataGridView1.TabIndex = 23;
+            this.testdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.testdgv.Location = new System.Drawing.Point(12, 288);
+            this.testdgv.Name = "testdgv";
+            this.testdgv.Size = new System.Drawing.Size(673, 155);
+            this.testdgv.TabIndex = 23;
             // 
             // button3
             // 
@@ -152,6 +156,7 @@
             this.button3.TabIndex = 24;
             this.button3.Text = "Refresh";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_developer
             // 
@@ -173,15 +178,28 @@
             this.btn_testok.UseVisualStyleBackColor = true;
             this.btn_testok.Click += new System.EventHandler(this.btn_testok_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbluname
+            // 
+            this.lbluname.AutoSize = true;
+            this.lbluname.Location = new System.Drawing.Point(147, 13);
+            this.lbluname.Name = "lbluname";
+            this.lbluname.Size = new System.Drawing.Size(0, 13);
+            this.lbluname.TabIndex = 27;
+            // 
             // Tester
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 462);
+            this.Controls.Add(this.lbluname);
             this.Controls.Add(this.btn_testok);
             this.Controls.Add(this.btn_developer);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.testdgv);
             this.Controls.Add(this.txt_search2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_logout);
@@ -194,8 +212,9 @@
             this.Controls.Add(this.date2);
             this.Name = "Tester";
             this.Text = "Tester";
+            this.Load += new System.EventHandler(this.Tester_Load);
             ((System.ComponentModel.ISupportInitialize)(this.devdgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testdgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,10 +232,11 @@
         private System.Windows.Forms.Button btn_logout;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_search2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView testdgv;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btn_developer;
         private System.Windows.Forms.Button btn_testok;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbluname;
     }
 }

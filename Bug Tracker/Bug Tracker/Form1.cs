@@ -60,7 +60,7 @@ namespace Bug_Tracker
                             else if (type == "Tester")
                             {
                                 Username = txtUname.Text.Trim();
-                                TesterFrm panel = new TesterFrm();
+                                Tester panel = new Tester();
                                 panel.Show();
                                 this.Hide();
                             }

@@ -68,11 +68,23 @@
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
+    <Compile Include="Deleteproject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deleteproject.Designer.cs">
+      <DependentUpon>Deleteproject.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeveloperFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeveloperFrm.Designer.cs">
       <DependentUpon>DeveloperFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Developer_sent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Developer_sent.Designer.cs">
+      <DependentUpon>Developer_sent.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -94,17 +106,23 @@
     <Compile Include="Tester.Designer.cs">
       <DependentUpon>Tester.cs</DependentUpon>
     </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Updatestatus.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Updatestatus.Designer.cs">
       <DependentUpon>Updatestatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserFrm.cs">
+    <Compile Include="Updatetester.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserFrm.Designer.cs">
-      <DependentUpon>UserFrm.cs</DependentUpon>
+    <Compile Include="Updatetester.Designer.cs">
+      <DependentUpon>Updatetester.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminFrm.resx">
       <DependentUpon>AdminFrm.cs</DependentUpon>
@@ -115,8 +133,14 @@
     <EmbeddedResource Include="check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Deleteproject.resx">
+      <DependentUpon>Deleteproject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeveloperFrm.resx">
       <DependentUpon>DeveloperFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Developer_sent.resx">
+      <DependentUpon>Developer_sent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -133,15 +157,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tester.resx">
       <DependentUpon>Tester.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Updatestatus.resx">
       <DependentUpon>Updatestatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserFrm.resx">
-      <DependentUpon>UserFrm.cs</DependentUpon>
+    <EmbeddedResource Include="Updatetester.resx">
+      <DependentUpon>Updatetester.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

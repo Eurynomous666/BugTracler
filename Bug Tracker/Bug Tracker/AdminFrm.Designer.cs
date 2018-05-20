@@ -36,9 +36,9 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createNewAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.date = new System.Windows.Forms.Label();
-            this.Completed = new System.Windows.Forms.DataGridView();
+            this.completed = new System.Windows.Forms.DataGridView();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.Pending = new System.Windows.Forms.DataGridView();
+            this.pending = new System.Windows.Forms.DataGridView();
             this.btnRefresh1 = new System.Windows.Forms.Button();
             this.btnDlt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,8 +47,8 @@
             this.time = new System.Windows.Forms.Label();
             this.btnAssignProj = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Completed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pending)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.completed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pending)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -75,21 +75,21 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addToolStripMenuItem.Text = "Add new Project";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -110,13 +110,15 @@
             this.date.Text = "Date";
             this.date.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // Completed
+            // completed
             // 
-            this.Completed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Completed.Location = new System.Drawing.Point(12, 81);
-            this.Completed.Name = "Completed";
-            this.Completed.Size = new System.Drawing.Size(545, 208);
-            this.Completed.TabIndex = 2;
+            this.completed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.completed.Location = new System.Drawing.Point(12, 81);
+            this.completed.Name = "completed";
+            this.completed.Size = new System.Drawing.Size(545, 208);
+            this.completed.TabIndex = 2;
+            this.completed.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Completed_CellContentClick);
+            this.completed.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Completed_CellDoubleClick);
             // 
             // btnRefresh
             // 
@@ -126,14 +128,15 @@
             this.btnRefresh.TabIndex = 3;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // Pending
+            // pending
             // 
-            this.Pending.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Pending.Location = new System.Drawing.Point(12, 356);
-            this.Pending.Name = "Pending";
-            this.Pending.Size = new System.Drawing.Size(545, 228);
-            this.Pending.TabIndex = 4;
+            this.pending.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pending.Location = new System.Drawing.Point(12, 356);
+            this.pending.Name = "pending";
+            this.pending.Size = new System.Drawing.Size(545, 228);
+            this.pending.TabIndex = 4;
             // 
             // btnRefresh1
             // 
@@ -143,6 +146,7 @@
             this.btnRefresh1.TabIndex = 5;
             this.btnRefresh1.Text = "Refresh";
             this.btnRefresh1.UseVisualStyleBackColor = true;
+            this.btnRefresh1.Click += new System.EventHandler(this.btnRefresh1_Click);
             // 
             // btnDlt
             // 
@@ -152,6 +156,7 @@
             this.btnDlt.TabIndex = 6;
             this.btnDlt.Text = "Delete Project";
             this.btnDlt.UseVisualStyleBackColor = true;
+            this.btnDlt.Click += new System.EventHandler(this.btnDlt_Click);
             // 
             // label1
             // 
@@ -207,18 +212,19 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDlt);
             this.Controls.Add(this.btnRefresh1);
-            this.Controls.Add(this.Pending);
+            this.Controls.Add(this.pending);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.Completed);
+            this.Controls.Add(this.completed);
             this.Controls.Add(this.date);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "btnAssign";
             this.Text = "AdminFrm";
+            this.Load += new System.EventHandler(this.btnAssign_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Completed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pending)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.completed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pending)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,9 +238,9 @@
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label date;
-        private System.Windows.Forms.DataGridView Completed;
+        private System.Windows.Forms.DataGridView completed;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.DataGridView Pending;
+        private System.Windows.Forms.DataGridView pending;
         private System.Windows.Forms.Button btnRefresh1;
         private System.Windows.Forms.Button btnDlt;
         private System.Windows.Forms.Label label1;

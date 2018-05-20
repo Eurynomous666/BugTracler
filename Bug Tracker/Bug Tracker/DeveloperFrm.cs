@@ -85,11 +85,7 @@ namespace Bug_Tracker
 
         private void devdgv_DoubleClick(object sender, EventArgs e)
         {
-            val = devdgv.SelectedRows[0].Cells[1].Value + string.Empty;
-            string userId = devdgv.SelectedRows[0].Cells[2].Value + string.Empty;
-            Error = devdgv.SelectedRows[0].Cells[1].Value + string.Empty;
-            Updatestatus up = new Updatestatus();
-            up.Show();
+            
         }
 
         private void btnlogout_Click(object sender, EventArgs e)
@@ -97,6 +93,20 @@ namespace Bug_Tracker
             this.Hide();
             Form1 log = new Form1();
             log.Show();
+        }
+
+        private void devdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void devdgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            val = devdgv.SelectedRows[0].Cells[1].Value + string.Empty;
+            string userId = devdgv.SelectedRows[0].Cells[2].Value + string.Empty;
+            Error = devdgv.SelectedRows[0].Cells[1].Value + string.Empty;
+            Updatestatus up = new Updatestatus();
+            up.Show();
         }
 
         private void txtsearch_TextChanged(object sender, EventArgs e)

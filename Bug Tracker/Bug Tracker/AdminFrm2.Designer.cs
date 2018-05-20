@@ -192,6 +192,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AdminFrm2";
             this.Text = "AdminFrm2cs";
+            this.Load += new System.EventHandler(this.AdminFrm2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

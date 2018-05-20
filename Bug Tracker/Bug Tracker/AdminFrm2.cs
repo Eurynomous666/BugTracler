@@ -16,6 +16,7 @@ namespace Bug_Tracker
     {
         Connection connection = new Connection();
         string query;
+        public static string id, name;
         public AdminFrm2()
         {
             InitializeComponent();
@@ -58,6 +59,11 @@ namespace Bug_Tracker
                 txtcode.SetHighlighting("C#");
 
             }
+        }
+
+        private void AdminFrm2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

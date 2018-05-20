@@ -13,6 +13,72 @@ namespace Bug_Tracker
     public partial class Tester : Form
     {
         public static string id, pname, project_Id, project_name, project_date, project_complete, val, code, line,query;
+        Connection Conn = new Connection();
+        public static int count;
+        string bugQuery, Query, select;
+
+
+        private void Tester_Load(object sender, EventArgs e)
+        {
+            date2.Text = DateTime.Now.ToLongDateString();
+            time1.Text = DateTime.Now.ToLongTimeString();
+            tester_display();
+            display();
+            lbluname.Text = Form1.user + "!!!!";
+        }
+
+        private void devdgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            val = devdgv.SelectedRows[0].Cells[0].Value + string.Empty;
+            string userId = devdgv.SelectedRows[0].Cells[2].Value + string.Empty;
+            Updatetester up = new Updatetester();
+            up.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void display()
+        {
+            devdgv.DataSource = null;
+            //fetching user type from database
+            bugQuery = "select * from tbl_project";
+
+            DataTable bugDt = Conn.retrieve(bugQuery);
+
+            devdgv.DataSource = bugDt;
+        }
+
+        private void tester_display()
+        {
+            testdgv.DataSource = null;
+            //fetching user type from database
+            select = "select * from tbl_tester";
+
+            DataTable testDt = Conn.retrieve(select);
+
+            testdgv.DataSource = testDt;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time1.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 log = new Form1();
+            log.Show();
+        }
+
+        private void btn_refresh2_Click(object sender, EventArgs e)
+        {
+            display();
+        }
 
         private void btn_testok_Click(object sender, EventArgs e)
         {
@@ -39,7 +105,7 @@ namespace Bug_Tracker
                 project_Id = testdgv.SelectedRows[0].Cells[1].Value + string.Empty;
                 code = testdgv.SelectedRows[0].Cells[5].Value + string.Empty;
                 line = testdgv.SelectedRows[0].Cells[6].Value + string.Empty;
-                Developer_sent_ ag = new Developer_sent_();
+                Developer_sent ag = new Developer_sent();
                 ag.Show();
             }
             else
@@ -72,7 +138,7 @@ namespace Bug_Tracker
 
         private void devdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+       
         }
 
         public Tester()

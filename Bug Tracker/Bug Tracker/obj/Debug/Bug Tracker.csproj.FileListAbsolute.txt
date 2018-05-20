@@ -9,10 +9,36 @@ Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.GenerateResou
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CoreCompileInputs.cache
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.exe
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.pdb
-Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.TesterFrm.resources
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.AdminFrm2.resources
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CopyComplete
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.DeveloperFrm.resources
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.check.resources
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Updatestatus.resources
 Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.btnAssign.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csprojAssemblyReference.cache
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.btnAssign.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.AdminFrm2.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.check.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Deleteproject.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.DeveloperFrm.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Developer_sent.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Form1.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Form2.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Properties.Resources.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Test.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Tester.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Updatestatus.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Updatetester.resources
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.GenerateResource.cache
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CoreCompileInputs.cache
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.exe
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.pdb
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.exe.config
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.exe
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.pdb
+C:\Users\nischal\Desktop\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CopyComplete
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Deleteproject.resources
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Developer_sent.resources
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Test.resources
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Tester.resources
+Z:\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Updatetester.resources

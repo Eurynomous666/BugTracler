@@ -128,6 +128,8 @@
             this.devdgv.Name = "devdgv";
             this.devdgv.Size = new System.Drawing.Size(755, 330);
             this.devdgv.TabIndex = 37;
+            this.devdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.devdgv_CellContentClick);
+            this.devdgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.devdgv_CellDoubleClick);
             this.devdgv.DoubleClick += new System.EventHandler(this.devdgv_DoubleClick);
             // 
             // lblUname
